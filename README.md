@@ -1,8 +1,8 @@
-# Dark Porfolio
+# LOMBOK Page
 ![LOMBOK HOME](https://i.imgur.com/QIOSCpD.png)
 
 ***
-# About Dark Portfolio
+# About LOMBOK
 
 ## What?
 This is a simple LOMBOK page, which contains some articles, information, and forms to call him about LOMBOK
