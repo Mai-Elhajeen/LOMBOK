@@ -104,3 +104,80 @@ html, body, .container{
     left: 50%;
     border-radius: 12px;
 }
+
+/* **************** start articles **************** */
+.container .articles{
+    width: 100%;
+    min-height: 500px;
+    background-color: #E5E5E1;
+    padding: 150px 280px;
+}
+.articles .title .sec-name{
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 24px;
+    position: relative;
+    color: #40595D;
+}
+.sec-name::after{
+    content: '';
+    width: 83px;
+    height: 4px;
+    background-color: #40595D;
+    position: absolute;
+    bottom: -27px;
+    transform: translate(-50%);
+    left: 50%;
+    border-radius: 12px;
+}
+.articles .boxes{
+    width: 100%;
+    min-height: 300px;
+    margin-top: 100px;
+}
+.boxes .single-box{
+    float: left;
+    width: 29.33333%;
+    min-height: 400px;
+    box-shadow: 0 5px 13px -1px #b7b7b7;
+    background-color: #fff;
+    transition:  transform 1s;
+    margin: 2%;
+}
+.single-box:hover{
+    transform: translateY(-15px);
+    cursor: pointer;
+}
+.boxes .single-box .image-div{
+    width: 100%;
+    height: 210px;
+    margin-bottom: 50px;
+}
+.image-div .image{
+    width: 100%;
+    height: 100%;
+}
+.content-div{
+    width: 100%;
+    padding: 30px 45px;
+}
+.content-div .question{
+    font-weight: 500;
+    font-size: 15px;
+    color: #40595D;
+    text-align: center;
+    position: relative;
+}
+.content-div .question::after{
+    content: '';
+    width: 40px;
+    height: 3px;
+    background-color: #40595D;
+    position: absolute;
+    top: -27px;
+    transform: translate(-50%);
+    left: 50%;
+    border-radius: 12px;
+}
