@@ -276,12 +276,13 @@ html, body, .container{
     width: 100%;
     min-height: 200px;
     background-color: #fff;
-    padding: 50px 150px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
 }
 .footer .icons-div{
     width: 50%;
     float: left;
-    line-height: 7;
 }
 .footer .icons-div .icon{
     font-size: 30px;
@@ -292,7 +293,6 @@ html, body, .container{
     width: 50%;
     float: left;
     text-align: right;
-    line-height: 5.3;
 }
 .footer .links .link{
     color: #40595D;
@@ -302,3 +302,5 @@ html, body, .container{
     margin: 0 5px;
     text-transform: uppercase;
 }
+
+/* ******************************** start media query ******************************** */
