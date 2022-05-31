@@ -19,3 +19,88 @@ html, body, .container{
     width: 100%;
     height: 100%;
 }
+
+/* **************** start header **************** */
+.home{
+    width: 98%;
+    min-height: 760px;
+    background: url(../img/plant.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 50px 130px;
+    margin: 1%;
+}
+.home .top{
+    width: 100%;
+    height: 70px;
+}
+.top .logo{
+    float: left;
+    width: 20%;
+    font-weight: 600;
+}
+.logo .logo-name{
+    font-size: 40px;
+    color: #40595D;
+}
+.top .nav-list{
+    float: left;
+    width: 80%;
+    text-align: right;
+}
+.nav-list .nav-item{
+    padding: 10px 9px;
+    margin: 0 5px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #40595D;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    transition: color .5s;
+}
+.nav-list .nav-item:hover{
+    color: #75b468;
+}
+.nav-list .btn{
+    background: none;
+    font-size: 17px;
+    border: 3px solid #000;
+    transition: color .5s , border .5s;
+}
+.nav-list .btn:hover{
+    border: 3px solid #75b468;
+    color: #75b468;
+}
+.clear{
+    clear: both;
+}
+.home-title{
+    text-align: center;
+    margin-top: 230px;
+}
+.home-title .title{
+    font-size: 60px;
+    color: #40595D;
+    margin: 10px 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 10px;
+}
+.home-title .home-para{
+    font-family: 'regular';
+    color: #40595D;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 17px;
+    position: relative;
+}
+.home-title .home-para::after{
+    content: '';
+    width: 60px;
+    height: 5px;
+    background-color: #6a8488;
+    position: absolute;
+    bottom: -27px;
+    transform: translate(-50%);
+    left: 50%;
+    border-radius: 12px;
+}
