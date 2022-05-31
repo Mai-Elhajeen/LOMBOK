@@ -47,6 +47,9 @@ html, body, .container{
     float: left;
     width: 80%;
     text-align: right;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 }
 .nav-list .nav-item{
     padding: 10px 9px;
@@ -111,7 +114,7 @@ html, body, .container{
     width: 100%;
     min-height: 500px;
     background-color: #E5E5E1;
-    padding: 150px 280px;
+    padding: 32px;
 }
 .articles .title .sec-name{
     text-align: center;
@@ -137,6 +140,8 @@ html, body, .container{
     width: 100%;
     min-height: 300px;
     margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
 }
 .boxes .single-box{
     float: left;
@@ -159,10 +164,6 @@ html, body, .container{
 .image-div .image{
     width: 100%;
     height: 100%;
-}
-.content-div{
-    width: 100%;
-    padding: 30px 45px;
 }
 .content-div .question{
     font-weight: 500;
@@ -199,7 +200,7 @@ html, body, .container{
 .about .content-div{
     float: left;
     width: 55%;
-    padding: 158px 120px;
+    padding: 30px 45px;
 }
 .about .content-div .sec-name{
     text-align: center;
@@ -227,6 +228,7 @@ html, body, .container{
 }
 .subscribe .content-div{
     text-align: center;
+    margin-bottom: 16px;
 }
 .subscribe .content-div .title{
     text-align: center;
@@ -304,3 +306,118 @@ html, body, .container{
 }
 
 /* ******************************** start media query ******************************** */
+@media (max-width: 425px) {
+    header#home,
+    .container .articles,
+    .container .subscribe,
+    .container .footer {
+        padding: 16px 8px;
+    }
+    .logo .logo-name {
+        font-size: 32px;
+    }
+    .nav-list .nav-item{
+        font-size: 12px;
+        padding: 0;
+    }
+    .nav-list .btn{
+        padding: 4px;
+    }
+    .home .top {
+        display: flex;
+        align-items: center;
+    }
+    .top .nav-list {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .home-title {
+        margin-top: 170px;
+    }
+    .home-title .title {
+        font-size: 48px; 
+    }
+    .home-title .home-para{
+        font-size: 14px;
+    }
+
+    /* start articles  */
+    .articles .boxes {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .boxes .single-box {
+        float: left;
+        width: 100%;
+        margin: 0;
+        margin-top: 24px;
+    }
+
+    /* start about */
+    .container .about{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .about .image-div{
+        width: 100%;
+    }
+    .about .content-div{
+        width: 100%;
+        padding: 0;
+    }
+    .content-div .description {
+        margin-top: 24px;
+        text-align: center;
+        font-size: 16px;
+        padding: 24px 8px;
+    }
+
+    /* start subscribe */
+    .subscribe .content-div .sub-para{
+        font-size: 15px;
+    }
+    .sub-form .email{
+        width: 100%;
+    }
+
+    /* start footer */
+    .container .footer {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .footer .icons-div, 
+    .footer .links{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .footer .links .link{
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 815px) {
+    .home,
+    .container .articles {
+        padding: 32px;
+    }
+
+    .boxes .single-box{
+        width: 46%;
+    }
+    .about .content-div{
+        padding: 30px 45px;
+    }
+    .content-div .description {
+        font-size: 16px;
+    }
+    .container .subscribe{
+        padding: 0;
+    }
+    .footer .links {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
