@@ -270,3 +270,35 @@ html, body, .container{
     cursor: pointer;
     transform: translateY(-5px);
 }
+
+/* **************** start footer **************** */
+.container .footer{
+    width: 100%;
+    min-height: 200px;
+    background-color: #fff;
+    padding: 50px 150px;
+}
+.footer .icons-div{
+    width: 50%;
+    float: left;
+    line-height: 7;
+}
+.footer .icons-div .icon{
+    font-size: 30px;
+    color: #40595D;
+    margin: 0 10px;
+}
+.footer .links{
+    width: 50%;
+    float: left;
+    text-align: right;
+    line-height: 5.3;
+}
+.footer .links .link{
+    color: #40595D;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
+    margin: 0 5px;
+    text-transform: uppercase;
+}
